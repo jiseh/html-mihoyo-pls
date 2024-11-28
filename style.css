@@ -1,0 +1,105 @@
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content-container {
+  margin: 100px 0px;
+  display: block;
+  height: 256px;
+}
+
+.portrait-display-name {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 256px;
+  float: left;
+  margin-left: 2%;
+}
+
+.portrait {
+  margin-right: 2.5%;
+}
+
+.display-name {
+  display: inline;
+}
+
+.item-description {
+  width: 45%;
+  height: auto;
+  float: right;
+  margin-right: 2%;
+}
+
+.item-description div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+}
+
+.item {
+  float: left;
+  height: 85px;
+  object-fit: contain;
+  margin-right: 2%;
+}
+
+.description {
+  display: inline;
+}
+
+@media (max-width: 1280px) {
+  .portrait-display-name {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+    float: none;
+  }
+
+  .content-container {
+    height: 512px;
+  }
+
+  .portrait {
+    margin-right: 0px;
+    float: none;
+  }
+
+  .display-name {
+    display: block;
+  }
+
+  /* alternate using Block */
+  .item-description {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: none;
+  }
+
+  .item-description div {
+    width: 98%;
+    height: 85px;
+  }
+
+  /* alternate using flex */
+  /* .item-description {
+    display: flex;
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-right: 0%;
+  } */
+
+  /* Took me 6 hours to figure this shit out fml cshit */
+}
